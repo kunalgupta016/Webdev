@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <p id="fpara" class="Text">First paragraph</p>
+    <p id="spara" class="Text">Second paragraph</p>
+    <p id="tpara" class="Text">Third paragraph</p>
+    <p id="fopara" class="Text">Fourth paragraph</p>
+    <h1 id="fheading" class="Text">First Heading</h1> -->
+
+
+    <!-- <div id="fdiv">
+        <p>
+            This is my First para
+            <span>
+                Text
+            </span>
+        </p>
+
+        <p>This is my second para</p>
+
+    </div> -->
+
+
+    <div style=" padding: 1rem;  background-color: yellow;">
+        Hello Jee
+        <div id="mydiv" style=" padding: 3rem;  background-color: grey;">
+            <p id="fpara">
+                First
+            </p>
+            <h1>
+                Second
+            </h1>
+            <p>
+                Third
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        
+        // let b = document.getElementById("fpara");
+        // b.innerHTML = '<h1> HEllo Jee </h1>';
+        // console.log(b);
+
+        // console.log(b.outerHTML);
+
+        // let element  = document.querySelector('#fdiv');
+        // console.log("TextContent: ",element.textContent);
+        // console.log("Inner Text: ",element.innerText);
+
+
+        // let fhead = document.createElement('h1');
+        // fhead.textContent = "My name is Kunal Gupta ";
+        // console.log(fhead);
+
+        // let bodyTag = document.querySelector('body');
+        // bodyTag.append(fhead);
+        
+        // console.log(body);
+
+        // let mydiv = document.querySelector("#mydiv");
+        // console.log(mydiv);
+        // let newElement = document.createElement('span');
+        // newElement.textContent = "This is Kunal";
+        // console.log(newElement);
+        // mydiv.insertAdjacentElement('beforeend',newElement);
+        // console.log(document.querySelector('body').innerText);
+
+        let parent = document.querySelector("#mydiv");
+        let child = document.querySelector('#fpara');
+        parent.removeChild(child);
+
+
+
+
+    </script>
+</body>
+</html>
