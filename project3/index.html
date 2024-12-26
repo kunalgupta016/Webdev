@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather ForeCast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Checker </h1>
+
+        
+        <div class="user-input-container">
+            <input type="text" id="city-name" 
+            placeholder="Enter the city Name">
+            <button id="search-btn" onclick="fetchWeather()">Search</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="displayCondition">
+
+               <div class="display-items">
+                    <div class="temperature ">
+                        <span id="city-temperature"></span>
+                        
+                        <div class="block" id="temp"></div>
+                    </div>
+               </div>
+
+               <div class="display-items">
+                    <div class="Weather ">
+                        <span id="city-weather"></span>
+                        
+                        <div class="block" id="weat"></div>
+                    </div>
+                </div>
+
+                <div class="display-items">
+                    <div class="Wind ">
+                        <span id="city-wind"></span>
+                        
+                        <div class="block" id="s-and-d"></div>
+                    </div>
+               </div>
+
+               <div class="display-items">
+                <div class="Humidity">
+                    <span id="city-humidity"></span>
+                    
+                    <div class="block" id="humi"></div>
+                </div>
+           </div>
+
+           <div class="display-items">
+            <div class="atm">
+                <span id="city-atm"></span>
+                
+                <div class="block" id="ap"></div>
+            </div>
+       </div>
+
+       
+
+            </div>
+
+
+            
+        </div>
+
+
+
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
