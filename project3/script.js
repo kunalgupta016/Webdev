@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isMatching = regex.test(cityname);
         if (!isMatching) {
             alert("Invalid City name");
+            return false;
         }
         return isMatching;
     }

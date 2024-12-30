@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+
+.banner {
+    width: 100%;
+    height: 100vh; /* Full height for mobile */
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+.logo {
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+    margin-right: 0; /* Remove right margin on small screens */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the items */
+}
+
+.navbar ul li {
+    list-style: none; /* Remove default list styling */
+    margin: 0 15px; /* Horizontal spacing between items */
+    position: relative; /* Position for pseudo-elements */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    color: #ffffff; /* White text color */
+    font-weight: 600; /* Bold text */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar ul li a:hover {
+    background-color: #3498db; /* Bright blue background on hover */
+    color: #ffffff; /* Keep text color white on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.navbar ul li a::after {
+    content: ''; /* Create a pseudo-element */
+    display: block; /* Make it a block element */
+    height: 3px; /* Height of the underline */
+    width: 0; /* Start with no width */
+    background: #5cfaff; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for width */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Center it horizontally */
+    bottom: -5px; /* Position it below the text */
+    transform: translateX(-50%); /* Center the underline */
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+
+.content h1 {
+    margin-top: 80px;
+    font-size: 50px; /* Smaller font size for mobile */
+    font-weight: 800;
+    opacity: 0;
+    transform: translateZ(-500px);
+    animation: floatEffect 4s ease-out forwards;
+}
+
+@keyframes floatEffect {
+    0% {
+        opacity: 0;
+        transform: translateZ(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+
+#travel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #travel{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Horizontal layout for larger screens */
+    }
+
+    .logo {
+        margin-right: 8rem; /* Restore right margin */
+    }
+
+    .navbar ul li {
+        margin: 20px; /* Restore original margin */
+    }
+
+    .content h1 {
+        font-size: 70px; /* Adjust font size for tablets */
+    }
+
+    
+}
+
+/* Styles for desktops */
+@media (min-width: 1024px) {
+    .content h1 {
+        font-size: 90px; /* Original font size for desktops */
+    }
+}
+
+
+.travel-guides {
+    background-color: #ffffff; /* White background for travel guides */
+    padding: 40px; /* Padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+}
+
+.guide-cards {
+    display: flex; /* Use flexbox for card layout */
+    justify-content: space-around; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.guide-card {
+    background-color: #e0e0e0; /* Light gray background for cards */
+    border-radius: 20px; /* Rounded corners for cards */
+    padding: 20px; /* Padding inside cards */
+    margin: 10px; /* Margin around cards */
+    width: 250px; /* Fixed width for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.guide-card:hover {
+    transform: translateY(-5px); /* Slightly lift card on hover */
+}
+

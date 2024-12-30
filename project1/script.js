@@ -3,10 +3,11 @@ let img2 = document.querySelector('#img2');
 let img3 = document.querySelector('#img3');
 let img4 = document.querySelector('#img4');
 let Rotate = document.querySelector('#btn');
-function rotatekaro(e){
+function rotatekaro(){
     // console.log("CLICK");
     // e.preventDefault();
     img4.style.cssText = "transform: translate(-50%,-50%) rotate(-50deg);"
+    rotatekaro();
 }
 Rotate.addEventListener('click',rotatekaro);
 

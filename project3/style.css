@@ -36,6 +36,10 @@ body.snowy {
     background: linear-gradient(135deg, #E0FFFF, #ADD8E6);
 }
 
+.none{
+    display: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
