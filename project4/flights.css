@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+
+.banner {
+    width: 100%;
+    height: 100vh; /* Full height for mobile */
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+.logo {
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+    margin-right: 0; /* Remove right margin on small screens */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the items */
+}
+
+.navbar ul li {
+    list-style: none; /* Remove default list styling */
+    margin: 0 15px; /* Horizontal spacing between items */
+    position: relative; /* Position for pseudo-elements */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    color: #ffffff; /* White text color */
+    font-weight: 600; /* Bold text */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar ul li a:hover {
+    background-color: #3498db; /* Bright blue background on hover */
+    color: #ffffff; /* Keep text color white on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.navbar ul li a::after {
+    content: ''; /* Create a pseudo-element */
+    display: block; /* Make it a block element */
+    height: 3px; /* Height of the underline */
+    width: 0; /* Start with no width */
+    background: #5cfaff; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for width */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Center it horizontally */
+    bottom: -5px; /* Position it below the text */
+    transform: translateX(-50%); /* Center the underline */
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+
+.content h1 {
+    margin-top: 80px;
+    font-size: 50px; /* Smaller font size for mobile */
+    font-weight: 800;
+    opacity: 0;
+    transform: translateZ(-500px);
+    animation: floatEffect 4s ease-out forwards;
+}
+
+@keyframes floatEffect {
+    0% {
+        opacity: 0;
+        transform: translateZ(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+
+#travel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #travel{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Horizontal layout for larger screens */
+    }
+
+    .logo {
+        margin-right: 8rem; /* Restore right margin */
+    }
+
+    .navbar ul li {
+        margin: 20px; /* Restore original margin */
+    }
+
+    .content h1 {
+        font-size: 70px; /* Adjust font size for tablets */
+    }
+
+    
+}
+
+/* Styles for desktops */
+@media (min-width: 1024px) {
+    .content h1 {
+        font-size: 60px; /* Original font size for desktops */
+    }
+}
+
+/* General Styling for the Search Bar */
+/* General Styling for the Search Bar */
+.search{
+    background-color: beige;
+}
+.search-bar {
+    background-color: #e0e5ec; /* Light gray background */
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 2s;    
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), 
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.search-bar:hover{
+    transform: translateY(-5px);
+}
+
+/* Styling for the Heading */
+.search-bar h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styling for the Form */
+.search-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Styling for Input Fields */
+.search-bar input[type="text"],
+.search-bar input[type="date"] {
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    background-color: #e0e5ec; /* Match the background */
+    box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.6), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Inner neomorphism effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus,
+.search-bar input[type="date"]:focus {
+    box-shadow: inset 2px 2px 4px rgba(163, 177, 198, 0.6), 
+                inset -2px -2px 4px rgba(255, 255, 255, 0.5); /* Subtler shadow on focus */
+    outline: none;
+}
+
+/* Styling for the Submit Button */
+.search-bar button {
+    padding: 12px 24px;
+    background-color: #e0e5ec; /* Match the background */
+    color: #333;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.6), 
+                -4px -4px 8px rgba(255, 255, 255, 0.5); /* Neomorphism effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+    box-shadow: 2px 2px 4px rgba(163, 177, 198, 0.6), 
+                -2px -2px 4px rgba(255, 255, 255, 0.5); /* Subtler shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.search-bar button:active {
+    box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.6), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.5); /* Pressed effect */
+    transform: translateY(0);
+}
+
+.flight-results {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.flight-results h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.flights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flight-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.flight-card h3 {
+    font-size: 18px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.flight-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIPZY - Travel Page</title>
+    <link rel="stylesheet" href="flights.css"> 
+</head>
+<body>
+    <div class="banner">
+        <img src="flight.webp" alt="" id="travel">
+        <div class="navbar">
+          <img class="logo" src="logo.png" />
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="travel.html">TRAVEL</a></li>
+            <li><a href="flights.html">FLIGHTS</a></li>
+            <li><a href="#">HOTELS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h1>FIND YOUR PERFECT FLIGHT</h1>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="search-bar">
+            <h1>Search For The Departed Flights</h1>
+            <form id="flightSearchForm">
+                <input type="text" name="departure" placeholder="Departure City" required>
+                <input type="text" name="arrival" placeholder="Arrival City" required>
+                <input type="date" name="departure-date" required>
+                <button type="submit">Search Flights</button>
+            </form>
+        </div>
+
+        <!-- <div class="search-bar">
+            <h1>Search For The Arrival Flights</h1>
+            <form>
+                <input type="text" name="departure" placeholder="Departure City" required>
+                <input type="text" name="arrival" placeholder="Arrival City" required>
+                <input type="date" name="departure-date" required>
+                <button type="submit">Search Flights</button>
+            </form>
+        </div> -->
+    </div>
+
+    <div id="flightResults" class="flight-results" style="display: none;">
+        <h2>Available Flights</h2>
+        <div id="flightsList" class="flights-list"></div>
+    </div>
+
+
+    <script src="flight.js"></script>
+    
+
+</body>
+</html>
