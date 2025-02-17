@@ -37,6 +37,32 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- <div class="absolute left-0 top-full flex justify-center">
+                                <div data-state="open" data-orientation="horizontal" class="origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-popover text-popover-foreground shadow data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]" style="--radix-navigation-menu-viewport-width: 600px; --radix-navigation-menu-viewport-height: 186px;">
+                                    <div id="radix-:r8:-content-radix-:ra:" aria-labelledby="radix-:r8:-trigger-radix-:ra:" data-orientation="horizontal" class="left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto" dir="ltr">
+                                        <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] cursor-hover">
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/meditation" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Meditation</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">Ancient meditation techniques from Vedic traditions</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/mantras" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Mantras</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">Sacred chants and their meanings</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/rituals" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Rituals</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">Traditional practices and ceremonies</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> -->
                         </nav>
                     </div>
                     <div class="hidden md:flex items-center space-x-4 cursor-hover">
@@ -137,7 +163,7 @@
                             </div>
                             
                             <div data-state="active" data-orientation="horizontal" role="tabpanel" aria-labelledby="radix-:r8:-trigger-gita" id="radix-:r8:-content-gita" tabindex="0" class="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 mt-6">
-                                <div class="rounded-[calc(var(--radius))] border-accent border bg-background text-muted-foreground shadow">
+                                <div class="rounded-lg border-accent border bg-background text-muted-foreground shadow">
                                     <div class="p-6 pt-6 cursor-hover">
                                         <h3 class="text-2xl font-bold mb-4 text-accent-foreground">Bhagavad Gita</h3>
                                         <p class="text-muted-foreground mb-4 cursor-hover">The divine song of Lord Krishna, containing the essence of spiritual wisdom.</p>
@@ -149,11 +175,13 @@
                             </div>
                             
                             <div data-state="inactive" data-orientation="horizontal" role="tabpanel" aria-labelledby="radix-:r8:-trigger-upanishads" id="radix-:r8:-content-upanishads" tabindex="0" class="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 mt-6" >
-                                <div class="rounded-[calc(var(--radius))] border-accent border bg-background text-muted-foreground shadow">
+                                <div class="rounded-lg border-accent border bg-background text-muted-foreground shadow">
                                     <div class="p-6 pt-6">
                                         <h3 class="text-2xl font-bold mb-4 text-accent-foreground">Upanishads</h3>
                                         <p class="text-muted-foreground mb-4">Ancient philosophical texts that contain the central teachings of Sanatan Dharma.</p>
-                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-accent shadow hover:bg-primary/90 h-9 px-4 py-2">Explore Upanishads</button>
+                                        <a href="">
+                                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-accent shadow hover:bg-primary/90 h-9 px-4 py-2">Explore Upanishads</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +191,9 @@
                                     <div class="p-6 pt-6 cursor-hover">
                                         <h3 class="text-2xl font-bold mb-4 cursor-hover text-accent-foreground">Vedas</h3>
                                         <p class="text-muted-foreground mb-4">The oldest scriptures of Hinduism, containing hymns, philosophies, and rituals.</p>
-                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-accent shadow hover:bg-primary/90 h-9 px-4 py-2">Discover Vedas</button>
+                                        <a href="">
+                                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-accent shadow hover:bg-primary/90 h-9 px-4 py-2">Discover Vedas</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
