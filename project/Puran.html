@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanatan</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .tiro-devanagari-hindi-regular {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiro-devanagari-hindi-regular-italic {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+    </style>
+</head>
+<body>
+    <div class="min-h-screen .tiro-devanagari-hindi-regular">
+        <div class="bg-background min-h-screen flex flex-col">
+            <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 cursor-hover">
+                <div class="container flex h-16 items-center justify-between cursor-hover">
+                    <div class="flex  items-center gap-8 cursor-hover">
+                        <a href="/index.html" class="flex items-center justify-center text-center space-x-2">
+                            <span class="text-2xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent pointer-hover">ॐ Sanatan</span>
+                        </a>
+                        <nav class="relative z-10 max-w-max flex-1 items-center justify-center hidden md:flex">
+                            <div style="position: relative;">
+                                <ul class="flex group flex-1 list-none items-center justify-center space-x-1 cursor-hover text-accent-foreground">
+                                    <li>
+                                        <button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent  focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50" id="sd" >Sanatan Dharma Granth
+                                            
+                                            <!-- <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180 pointer-hover" aria-hidden="true"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg> -->
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">Calenders
+                                            <!-- <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180 pointer-hover" aria-hidden="true"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg> -->
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="temples.html"><button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">Temples</button></a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="Auryeda.html"><button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">Auryeda</button></a>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="absolute left-0 top-full justify-center" id="sdg" style="display: none;">
+                                <div data-state="open" data-orientation="horizontal" class="origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-popover text-popover-foreground shadow data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]" style="--radix-navigation-menu-viewport-width: 600px; --radix-navigation-menu-viewport-height: 186px;">
+                                    <div id="radix-:r8:-content-radix-:ra:" aria-labelledby="radix-:r8:-trigger-radix-:ra:" data-orientation="horizontal" class="bg-background left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto" dir="ltr">
+                                        <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] cursor-hover">
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none text-accent-foreground no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/meditation" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Purana</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">Puranas are ancient Hindu texts that include legends and traditional lore. They cover a wide range of topics such as cosmology, genealogies of gods and kings, and religious practices.</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none text-accent-foreground no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/mantras" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Ramayan</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">The Ramayana is an ancient Indian epic composed in Sanskrit by the sage Valmiki, likely around the 5th century BCE</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none text-accent-foreground no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/rituals" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Mahabharat</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">The Mahabharata is an ancient Indian epic that revolves around the conflict between two branches of a family, the Pandavas and Kauravas, who battle for the throne of Hastinapura</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </nav>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4 cursor-hover">
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 h-9 px-4 py-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground hover:bg-accent text-accent-foreground">Sign In</button>
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 h-9 px-4 py-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-background">Start Journey</button>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <section class="py-20 px-4 bg-background">
+                    <div class="container mx-auto flex-col">
+                        <div class="max-w-4xl mx-auto mb-12 p-8 rounded-2xl bg-white shadow-[inset_0_0_10px_rgba(0,0,0,0.1)] border border-orange-100" ><h1 class="text-4xl font-bold text-orange-800 mb-4" >पुराण</h1><p class="text-gray-700 leading-relaxed whitespace-pre-wrap" >पुराण प्राचीन हिंदू ग्रंथ हैं जो विभिन्न देवताओं, विशेष रूप से त्रिमूर्ति के देवताओं की महिमा का गुणगान करते हैं। ये ग्रंथ दैवीय कथाओं, सृष्टि विज्ञान, वंशावली और दार्शनिक परंपराओं के माध्यम से धार्मिक शिक्षा प्रदान करते हैं। पुराण आमतौर पर कहानियों के रूप में लिखे गए हैं, जहाँ एक व्यक्ति दूसरे को कथा सुनाता है। इन्हें प्राचीन ज्ञान के विश्वकोश माना जाता है, जो सृष्टि, दर्शन, योग, भूगोल, संस्कृति, वास्तुकला और कई अन्य विषयों को शामिल करते हैं।
+
+                            "पुराण" शब्द संस्कृत में "प्राचीन" या "पुराना" अर्थ देता है। ये ग्रंथ हिंदू साहित्य के स्मृति संहिता का हिस्सा हैं। कुल मिलाकर 36 पुराण हैं, जिनमें 18 महा (मुख्य) पुराण और 18 उप (गौण) पुराण शामिल हैं।</p>
+                        </div>
+                        <div class="max-w-4xl mx-auto mb-12 p-8 rounded-2xl bg-white shadow-[inset_0_0_10px_rgba(0,0,0,0.1)] border border-orange-100" ><h1 class="text-4xl font-bold text-orange-800 mb-4" >पुराण के लक्षण</h1><p class="text-gray-700 leading-relaxed whitespace-pre-wrap" >'पुराण' का शाब्दिक अर्थ है - 'प्राचीन आख्यान' या 'पुरानी कथा'। ‘पुरा’ शब्द का अर्थ है - अनागत एवं अतीत। ‘अण’ शब्द का अर्थ होता है - कहना या बतलाना। <br>रघुवंश में पुराण शब्द का अर्थ है <b>"पुराण पत्रापग मागन्नतरम्"</b> एवं वैदिक वाङ्मय में "प्राचीन: वृत्तान्त:" दिया गया है।<br>अमरकोष आदि प्राचीन कोशों में पुराण के पाँच लक्षण माने गये हैं : सर्ग (सृष्टि), प्रतिसर्ग (प्रलय, पुनर्जन्म), वंश (देवता व ऋषि सूचियां), मन्वन्तर (चौदह मनु के काल), और वंशानुचरित (सूर्य चन्द्रादि वंशीय चरित)।
+
+                            <b>सर्गश्च प्रतिसर्गश्च वंशो मन्वन्तराणि च।
+                                वंशानुचरितं चैव पुराणं पञ्चलक्षणम् ॥</b>
+                            
+                            (१) <b>सर्ग</b> - पंचमहाभूत, इन्द्रियगण, बुद्धि आदि तत्त्वों की उत्पत्ति का वर्णन,
+                            (२) <b>प्रतिसर्ग</b> - ब्रह्मादिस्थावरान्त संपूर्ण चराचर जगत् के निर्माण का वर्णन,
+                            (३) <b> वंश</b> - सूर्यचन्द्रादि वंशों का वर्णन,
+                            (४) <b>मन्वन्तर</b> - मनु, मनुपुत्र, देव, सप्तर्षि, इन्द्र और भगवान् के अवतारों का वर्णन,
+                            (५) <b>वंशानुचरित</b> - प्रति वंश के प्रसिद्ध पुरुषों का वर्णन। <br>
+    माना जाता है कि सृष्टि के रचनाकर्ता ब्रह्माजी ने सर्वप्रथम जिस प्राचीनतम धर्मग्रन्थ की रचना की, उसे पुराण के नाम से जाना जाता है।
+
+
+                        </p>
+                        </div>
+                        <div class="max-w-4xl mx-auto mb-12 p-8 rounded-2xl bg-white shadow-[inset_0_0_10px_rgba(0,0,0,0.1)] border border-orange-100" ><h1 class="text-4xl font-bold text-orange-800 mb-4" >अष्टादश पुराण</h1><p class="text-gray-700 leading-relaxed whitespace-pre-wrap" >पुराणों की संख्या प्राचीन काल से अठारह मानी गयी है। देवीभागवत में नाम के आरंभिक अक्षर के निर्देशानुसार १८ पुराणों की गणना इस प्रकार की गयी हैं:
+                        <b>मद्वयं भद्वयं चैव ब्रत्रयं वचतुष्टयम्।
+                        ​अनापलिंगकूस्कानि पुराणानि पृथक्पृथक् ॥</b>
+                        म-2, भ-2, ब्र-3, व-4। 
+                        अ-1,ना-1, प-1, लिं-1, ग-1, कू-1, स्क-1 ॥
+                        
+                        अठारह पुराणों के नाम इस प्रकार हैं:
+                        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-auto mt-10">
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden ">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">ब्रह्म पुराण</h3>
+                                            <p class="text-sm w-full text-muted-foreground"></p>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">पद्म पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">विष्णु पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">शैव (वायु) पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">भागवत पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">नारद पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">मार्कण्डेय पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">अग्नि पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">भविष्य पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">ब्रह्मवैवर्त पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">लिङ्ग पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">वाराह पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">स्कन्द पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">वामन पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">कूर्म पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">मत्स्य पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">गरुड  पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="opacity: 1;transform: none;" class="hover:bg-slate-100">
+                                <a href="">
+                                    <div class="rounded-lg border text-muted-foreground  shadow backdrop-blur-sm border-e-muted-foreground transition-colors cursor-pointer overflow-hidden">
+                                        <div class="p-6 pt-6 w-full ">                                            
+                                            <h3 class="text-xl text-orange-800 font-semibold mb-2 tracking-tight w-full">ब्रह्माण्ड पुराण</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </section>
+
+
+
+                        </p>
+                        </div>
+
+                        <div class="max-w-4xl mx-auto mb-12 p-8 rounded-2xl bg-white shadow-[inset_0_0_10px_rgba(0,0,0,0.1)] border border-orange-100" ><h1 class="text-4xl font-bold text-orange-800 mb-4 text-center" >उपपुराण </h1><p class="text-gray-700 leading-relaxed whitespace-pre-wrap" >
+                            
+                            <ol style="list-style-type: decimal" class="gap-3 flex flex-col justify-center items-center">
+                                <li>आदि पुराण (सनत्कुमार द्वारा कथित)</li>
+                                <li>नरसिंह पुराण</li>
+                                <li>नन्दिपुराण (कुमार द्वारा कथित)</li>
+                                <li>शिवधर्म पुराण</li>
+                                <li>आश्चर्य पुराण (दुर्वासा द्वारा कथित)</li>
+                                <li>नारदीय पुराण (नारद द्वारा कथित)</li>
+                                <li>कपिल पुराण</li>
+                                <li>मानव पुराण</li>
+                                <li>उशना पुराण (उशनस्)</li>
+                                <li>ब्रह्माण्ड पुराण</li>
+                                <li>वरुण पुराण</li>
+                                <li>कालिका पुराण</li>
+                                <li>माहेश्वर पुराण</li>
+                                <li>साम्ब पुराण</li>
+                                <li>सौर पुराण</li>
+                                <li>पाराशर पुराण (पराशरोक्त)</li>
+                                <li>मारीच पुराण</li>
+                                <li>भार्गव पुराण</li>
+                                <li>विष्णुधर्म पुराण</li>
+                                <li>बृहद्धर्म पुराण</li>
+                                <li>गणेश पुराण</li>
+                                <li>मुद्गल पुराण</li>
+                                <li>एकाम्र पुराण</li>
+                                <li>दत्त पुराण</li>
+                            </ol>
+    
+    
+    
+                            </p>
+                            </div>
+
+                        
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanatan</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .tiro-devanagari-hindi-regular {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiro-devanagari-hindi-regular-italic {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="min-h-screen">
+        <div class="bg-background min-h-screen flex flex-col">
+            <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 cursor-hover">
+                <div class="container flex h-16 items-center justify-between cursor-hover">
+                    <div class="flex  items-center gap-8 cursor-hover">
+                        <a href="/index.html" class="flex items-center justify-center text-center space-x-2">
+                            <span class="text-2xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent pointer-hover">ॐ Sanatan</span>
+                        </a>
+                        <nav class="relative z-10 max-w-max flex-1 items-center justify-center hidden md:flex">
+                            <div style="position: relative;">
+                                <ul class="flex group flex-1 list-none items-center justify-center space-x-1 cursor-hover text-accent-foreground">
+                                    <li>
+                                        <button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent  focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50" id="sd" >Sanatan Dharma Granth
+                                            
+                                            <!-- <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180 pointer-hover" aria-hidden="true"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg> -->
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">Calenders
+                                            <!-- <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180 pointer-hover" aria-hidden="true"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg> -->
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="temples.html"><button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">Temples</button></a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="Auryeda.html"><button class="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 tex-sm font-medium transition-colors hover:bg-accent focus:text-accent-foreground focus:bg-accent hover:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">Auryeda</button></a>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="absolute left-0 top-full justify-center" id="sdg" style="display: none;">
+                                <div data-state="open" data-orientation="horizontal" class="origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-popover text-popover-foreground shadow data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]" style="--radix-navigation-menu-viewport-width: 600px; --radix-navigation-menu-viewport-height: 186px;">
+                                    <div id="radix-:r8:-content-radix-:ra:" aria-labelledby="radix-:r8:-trigger-radix-:ra:" data-orientation="horizontal" class="bg-background left-0 top-0 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto" dir="ltr">
+                                        <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] cursor-hover">
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none text-accent-foreground no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/Puran.html" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Purana</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">Puranas are ancient Hindu texts that include legends and traditional lore. They cover a wide range of topics such as cosmology, genealogies of gods and kings, and religious practices.</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none text-accent-foreground no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/mantras" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Ramayan</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">The Ramayana is an ancient Indian epic composed in Sanskrit by the sage Valmiki, likely around the 5th century BCE</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="block select-none space-y-1 rounded-md p-3 leading-none text-accent-foreground no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href="/rituals" data-radix-collection-item="" data-tabindex="" tabindex="-1">
+                                                    <div class="text-sm font-medium leading-none">Mahabharat</div>
+                                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">The Mahabharata is an ancient Indian epic that revolves around the conflict between two branches of a family, the Pandavas and Kauravas, who battle for the throne of Hastinapura</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </nav>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4 cursor-hover">
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 h-9 px-4 py-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground hover:bg-accent text-accent-foreground">Sign In</button>
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 h-9 px-4 py-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-background">Start Journey</button>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <section class="py-20 px-4 bg-background">
+                    <div class="container mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-400 cursor-hover ">Ayurveda - The Science of Life</h2>
+                        <p class="text-muted-foreground text-xl md:text-2xl font-semibold text-center">Discover the ancient wisdom of Ayurveda, a natural system of medicine that originated in India more than 5,000 years ago. Below you'll find some of the most important Ayurvedic medicines and their benefits.</p>
+
+                        <div class="max-w-7xl mx-auto">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-auto mt-10">
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/IRiRKAZCQ_DcpBBik6u0EiwwevBsDVk8DXKBgVAVGzE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzIyLzE5LzQ0/LzM2MF9GXzExMjIx/OTQ0MzNfNkdFY0Nr/SnNyV3RwcldoZll5/eTBYWUNORGRUQ3Nx/UHcuanBn" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Ashwagandha</h3>
+                                                <p class="text-sm w-full text-muted-foreground">Known as 'Indian Winter Cherry' or 'Indian Ginseng', Ashwagandha is one of the most important herbs in Ayurveda.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Reduces stress and anxiety</li>
+                                                    <li>Improves strength and muscle mass</li>
+                                                    <li>Boosts immunity</li>
+                                                    <li>Enhances memory and cognitive function</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Usually taken as a powder mixed with warm milk or water, typically 1-2 teaspoons daily.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/UfN7HGAB-bkcsYrGpw6CwPy_DsM0gNLq3Yna9APz6Pk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzExLzQ0LzgwLzI1/LzM2MF9GXzExNDQ4/MDI1MzhfZ1ZZZEp0/VXA5T1R4U0RoMlpw/WGVVS25aekVFVXlS/SzAuanBn" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Triphala</h3>
+                                                <p class="text-sm w-full text-muted-foreground">A traditional Ayurvedic formula combining three fruits: Amalaki, Bibhitaki, and Haritaki.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Supports digestive health</li>
+                                                    <li>Natural gentle detoxifier</li>
+                                                    <li>Improves eye health</li>
+                                                    <li>Reduces inflammation</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Can be taken as tablets or powder, typically 1/2 to 1 teaspoon before bed with warm water.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/f-p1d35MW1eNdIJh15yH_-jS0Exwnv2Tjfs1ugT97AQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM0/MDE2MDg5OS9waG90/by90dXJtZXJpYy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/Nmhxamc4OEtYZ19I/WnRrbUh0bFlBZTlE/U1ZDY0hQanp0dFM1/M28zcTFGWT0" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Turmeric (Haldi)</h3>
+                                                <p class="text-sm w-full text-muted-foreground">A powerful anti-inflammatory herb that has been used in Ayurvedic medicine for thousands of years.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Reduces inflammation</li>
+                                                    <li>Powerful antioxidant</li>
+                                                    <li>Improves brain function</li>
+                                                    <li>Supports joint health</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Can be added to food, taken as supplements, or mixed with milk as 'golden milk'.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/Y5lGHox5fhX_JzfosNWy16cb_1GzqEiIsQZxMNt0l0g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFueWFuYm90YW5p/Y2Fscy5jb20vY2Ru/L3Nob3AvZmlsZXMv/YmVuZWZpdHMtYnJh/aG1pLW1haW4uanBn/P3Y9MTcxNzcxMzAz/NyZ3aWR0aD0xMzQw" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Brahmi</h3>
+                                                <p class="text-sm w-full text-muted-foreground">Also known as Bacopa monnieri, Brahmi is a powerful herb known for its cognitive-enhancing properties.
+
+                                                </p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Improves memory and concentration</li>
+                                                    <li>Reduces anxiety and stress</li>
+                                                    <li>Supports brain health</li>
+                                                    <li>Enhances learning ability</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Available as tablets, powder, or liquid extract. Typically taken with warm water.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/urBAqnir3WuLRy8btUbvZAPEucMHwOGW86ZFizyt2g8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzk2LzM0LzU0/LzM2MF9GXzI5NjM0/NTQ5OV9tek4wVnBN/ektTdWdvUjJkUzRa/c2dTT3BtT2cweWdX/YS5qcGc" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Amla (Indian Gooseberry)</h3>
+                                                <p class="text-sm w-full text-muted-foreground">One of the richest natural sources of Vitamin C and a powerful antioxidant.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Boosts immunity</li>
+                                                    <li>Improves skin health</li>
+                                                    <li>Enhances digestion</li>
+                                                    <li>Supports heart health</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Can be consumed fresh, as juice, powder, or in supplement form.
+
+                                                </p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/-kABEWpEQuimemynzMYGi1kXQAtS8_6vnkgLGAc4hiU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmV0bWVkcy5jb20v/aW1hZ2VzL2Ntcy93/eXNpd3lnL2Jsb2cv/MjAyMC8wNS8xNTg5/OTYwNjcxX1NoYXRh/dmFyaV9iaWdfMS5q/cGc" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Shatavari</h3>
+                                                <p class="text-sm w-full text-muted-foreground">Known as the 'Queen of Herbs' in Ayurveda, particularly beneficial for women's health.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Supports female reproductive health</li>
+                                                    <li>Improves immune function</li>
+                                                    <li>Enhances digestive health</li>
+                                                    <li>Natural antioxidant</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Usually taken as powder with milk or water, or in tablet form.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/fClYOsb_9zBX5xmnxmEV4vpyatwvzDr7eNP4uLN4xdA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODQy/MjcyNTAyL3Bob3Rv/L25lZW0tYXl1cnZl/ZGljLW9pbC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9dURH/eExxdW9jN3JOZndl/b0FsY3RFQ2huQTNB/Qm9udkZocnd5czRr/bHZpUT0" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Neem</h3>
+                                                <p class="text-sm w-full text-muted-foreground">A versatile herb known for its antibacterial and antifungal properties.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Purifies blood</li>
+                                                    <li>Improves skin health</li>
+                                                    <li>Supports immune system</li>
+                                                    <li>Natural pesticide</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Available as tablets, powder, or oil. Can be used both internally and externally.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/bhMOlXRzmW1XZ421IerW5LHM3OqDeX22aLfxV9DiZSo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFueWFuYm90YW5p/Y2Fscy5jb20vY2Ru/L3Nob3AvZmlsZXMv/Z3VkdWNoaS1iZW5l/Zml0cy1tYWluLmpw/Zz92PTE3MTc3MTQw/Nzcmd2lkdGg9MTM0/MA" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Guduchi</h3>
+                                                <p class="text-sm w-full text-muted-foreground">Also known as Giloy, it's considered one of the most versatile herbs in Ayurveda.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Boosts immunity</li>
+                                                    <li>Reduces stress</li>
+                                                    <li>Improves digestive health</li>
+                                                    <li>Purifies blood</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Can be taken as juice, powder, or tablets.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/jn461kUfwLGHraU1LQhnwP_qG8CLb-aXOoMxqtupZOA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JnYW5pY2luZGlh/LmNvbS5hdS9jZG4v/c2hvcC9hcnRpY2xl/cy84LnBuZz92PTE2/NjQzMjg2NzYmd2lk/dGg9MTEwMA" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Shankhpushpi</h3>
+                                                <p class="text-sm w-full text-muted-foreground">A brain tonic herb known for its cognitive enhancing properties.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Improves memory</li>
+                                                    <li>Reduces anxiety</li>
+                                                    <li>Enhances learning ability</li>
+                                                    <li>Promotes sleep quality</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Usually taken as powder or syrup with milk or water.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="opacity: 1;transform: none;">
+                                    <a href="">
+                                        <div class="rounded-lg border text-accent-foreground shadow bg-secondary/50 backdrop-blur-sm border-primary/20 hover:bg-secondary/70 transition-colors cursor-pointer overflow-hidden">
+                                            <div class="p-6 pt-6 w-full ">
+                                                <div class="text-4xl mb-4 relative w-full h-48"><img src="https://imgs.search.brave.com/6TR5-N8XUEmSOiiukvZTrKH25ayeSFiInFkwoKZhMmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlcGFoYWRpc3Rv/cnkuY29tL2Nkbi9z/aG9wL2FydGljbGVz/L0xpY29yaWNlXzky/MHg2NTBfZGQxOGU1/NzUtYTIyYS00Zjg3/LWI5NjItM2M2OGEz/NTkyNGJjLmpwZz92/PTE2MjUxMTU0NzMm/d2lkdGg9MTUwMA" class="absolute h-full w-full inset-0 object-cover"></div>
+                                                <h3 class="text-xl font-semibold mb-2 tracking-tight w-full">Licorice (Mulethi)</h3>
+                                                <p class="text-sm w-full text-muted-foreground">A sweet root with numerous medicinal properties.</p>
+                                                <br>
+                                                <h3 class="font-bold">Benefits:</h3>
+                                                <ul class="text-muted-foreground px-1" style="list-style:disc;">
+                                                    <li>Soothes throat</li>
+                                                    <li>Supports respiratory health</li>
+                                                    <li>Aids digestion</li>
+                                                    <li>Boosts immunity</li>
+                                                </ul>
+                                                <br>
+                                                <h3 class="font-bold">Usage:</h3>
+                                                <p class="text-muted-foreground">Can be consumed as tea, powder, or in tablet form.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

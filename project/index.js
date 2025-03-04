@@ -2,6 +2,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll("[role='tab']");
     const panels = document.querySelectorAll("[role='tabpanel']");
     const tabContainer = document.querySelector(".grid");
+    let sdg = document.getElementById("sdg");
+    let sd = document.getElementById("sd");
+
+    function toggleMenu(){
+        if(sdg.style.display === "none" || sdg.style.display===""){
+            sdg.style.display = "flex";
+        }
+        else{
+            sdg.style.display = "none";
+        }
+    }
+
+    sd.addEventListener('click',toggleMenu);
 
     // Create a sliding indicator
     const indicator = document.createElement("div");
